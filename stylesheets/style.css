@@ -1,0 +1,135 @@
+body {
+}
+
+a {
+  color: #00B7FF;
+}
+
+div.numbers h1{
+  font-size: 10em;
+}
+
+div.numbers{
+  z-index: 100;
+  color: black;
+  position: fixed;
+  top:calc(50% - 150px);
+  left:calc(50% - 100px);
+  text-align: center;
+}
+
+div.thing{
+  width: 0px;
+  height: 0px;
+  top:-50px;
+  left:-50px;
+  background: rgba(255,255,255,1);
+  border-radius: 100%;
+  padding: 20px;
+  overflow: hidden;
+}
+
+div.redcircle {
+    position: relative;
+    width: 0px;
+    height: 0px;
+    top:-50px;
+    left:-50px;
+    -webkit-transition-duration: 2s;
+    -webkit-transition-property: all;
+    -webkit-transition-timing-function: ease-in-out;
+    text-align: center;
+    background: rgb(237, 50, 50);
+    border-radius: 100%;
+    padding: 20px;
+    overflow: hidden;
+}
+
+div.yellowcircle {
+    position: relative;
+    width: 0px;
+    height: 0px;
+    top:-50px;
+    left:-50px;
+    -webkit-transition-duration: 2s;
+    -webkit-transition-property: all;
+    -webkit-transition-timing-function: ease-in-out;
+    text-align: center;
+    background: #FFFF66;
+    border-radius: 100%;
+    padding: 20px;
+    overflow: hidden;
+}
+
+div.greencircle {
+    position: relative;
+    width: 0px;
+    height: 0px;
+    top:-50px;
+    left:-50px;
+    -webkit-transition-duration: 2s;
+    -webkit-transition-property: all;
+    -webkit-transition-timing-function: ease-in-out;
+    text-align: center;
+    background: rgb(188, 223, 138);
+    border-radius: 100%;
+    padding: 20px;
+    overflow: hidden;
+}
+
+div.bluecircle {
+    position: relative;
+    width: 0px;
+    height: 0px;
+    top:-50px;
+    left:-50px;
+    -webkit-transition-duration: 2s;
+    -webkit-transition-property: all;
+    -webkit-transition-timing-function: ease-in-out;
+    text-align: center;
+    background: rgb(148, 192, 204);
+    border-radius: 100%;
+    padding: 20px;
+    overflow: hidden;
+}
+
+div.violetcircle {
+    position: relative;
+    width: 0px;
+    height: 0px;
+    top:-50px;
+    left:-50px;
+    -webkit-transition-duration: 2s;
+    -webkit-transition-property: all;
+    -webkit-transition-timing-function: ease-in-out;
+    text-align: center;
+    background: rgb(238, 130, 238);
+    border-radius: 100%;
+    padding: 20px;
+    overflow: hidden;
+}
+
+div.orangecircle {
+    position: relative;
+    width: 0px;
+    height: 0px;
+    top:-50px;
+    left:-50px;
+    -webkit-transition-duration: 2s;
+    -webkit-transition-property: all;
+    -webkit-transition-timing-function: ease-in-out;
+    text-align: center;
+    background: #FF9933;
+    border-radius: 100%;
+    padding: 20px;
+    overflow: hidden;
+}
+
+
+div.topleft {
+    position: fixed;
+    top: -1300px;
+    left: -1300px;
+    width: 3000px;
+    height: 3000px;
+}

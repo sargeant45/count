@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+  </head>
+  <body>
+    <!--h1= title-->
+    <!--p Welcome to #{title}-->
+    <!--p #{thing}-->
+    <div class="col-md-4"></div>
+    <div style="text-align:center;" class="col-md-4">
+      <h1>Click to generate random number</h1>
+    </div>
+    <div class="col-md-4"></div>
+    <div class="start"></div>
+    <div class="numbers"> 
+      <h1>???</h1>
+    </div>
+    <script src="javascripts/jquery-1.11.0.js"></script>
+    <script src="javascripts/bootstrap.min.js"></script>
+    <script>
+      var click=1;
+      var circletype=['redcircle', 'yellowcircle','orangecircle','greencircle','bluecircle','violetcircle'];
+      $(document).click(function() {
+        var circle = circletype[Math.floor(Math.random()*circletype.length)];
+        $("div.start").append("<div class=\"thing\" id="+click+"></div>");
+        setTimeout(function() {
+          $('div.thing#'+(click-1)).addClass('topleft').addClass(circle);
+        },100)
+        $('div.numbers').hide().html('<h1>'+Math.floor(Math.random()*1000)+'</h1>');
+        setTimeout(function() {
+          $('div.numbers').fadeIn(2000);
+        },950)
+        click+=1;
+      });
+    </script>
+  </body>
+</html>
