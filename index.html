@@ -11,7 +11,7 @@
     <!--p #{thing}-->
     <div class="col-md-4"></div>
     <div style="text-align:center;" class="col-md-4">
-      <h1>Click to generate random number</h1>
+      <h1>COUNT</h1>
     </div>
     <div class="col-md-4"></div>
     <div class="start"></div>
@@ -29,12 +29,16 @@
         setTimeout(function() {
           $('div.thing#'+(click-1)).addClass('topleft').addClass(circle);
         },100)
-        $('div.numbers').hide().html('<h1>'+Math.floor(Math.random()*1000)+'</h1>');
+        $('div.numbers').hide().html('<h1>'+parseInt(document.getElementById('number').innerHTML) + 1 +'</h1>');
+        document.getElementById('number').innerHTML = parseInt(document.getElementById('number').innerHTML) + 1;
         setTimeout(function() {
           $('div.numbers').fadeIn(2000);
         },950)
         click+=1;
       });
     </script>
+    <div style="visible:hidden;" id="number">
+    1
+    </div>
   </body>
 </html>
